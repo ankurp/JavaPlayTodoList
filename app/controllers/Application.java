@@ -8,7 +8,7 @@ import views.html.*;
 public class Application extends Controller {
 
     public static Result index() {
-        return ok(index.render("Hello World from Java using Play"));
+        return ok(index.render("TodoItem List"));
     }
 
 }
