@@ -1,1 +1,1 @@
-web:    target/start run --http.port=$PORT $PLAY_OPTS
+web: target/universal/stage/bin/helloworld -Dhttp.port=${PORT} -DapplyEvolutions.default=true -Ddb.default.driver=org.postgresql.Driver -Ddb.default.url=${DATABASE_URL}
